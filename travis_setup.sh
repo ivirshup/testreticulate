@@ -11,5 +11,7 @@ hash -r
 conda config --set always_yes yes --set changeps1 no
 conda update -q conda
 conda info -a
+which pip
+pip install numpy scanpy
 # conda install numpy
 # pip install scanpy
