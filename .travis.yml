@@ -1,7 +1,7 @@
 language: r
 sudo: required
 cache: packages
-
+r: release
 os:
   - linux
   - osx
@@ -10,4 +10,15 @@ before_install:
   - chmod "+x" ./travis_setup.sh
   - ./travis_setup.sh
 
+
+addons:
+  apt:
+    packages:
+      - subversion
+      - autoconf
+      - build-essential
+      - libtool
+      - libmagick++-dev
+
 warnings_are_errors: false
+
