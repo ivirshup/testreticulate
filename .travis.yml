@@ -1,13 +1,15 @@
 language: r
 sudo: required
 cache: packages
+python: 
+  - "3.6"
 
 os:
   - linux
   - osx
 
 before_install:
-  - chmod "+x" ./travis_setup.sh
-  - ./travis_setup.sh
+  - which pip
+  - pip install numpy scanpy
 
 warnings_are_errors: false
