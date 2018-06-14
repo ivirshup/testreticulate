@@ -1,0 +1,6 @@
+library(reticulate)
+conda_create("seurat_py_deps")
+print("Install")
+conda_install("seurat_py_deps", c("python=3.6", "numpy", "seaborn", "scikit-learn", "statsmodels", "numba", "cython"), forge=F)
+print("Install: scanpy")
+conda_install("seurat_py_deps", c("scanpy", "phate"), pip=T, pip_ignore_installed=F)
