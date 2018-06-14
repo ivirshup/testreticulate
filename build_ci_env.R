@@ -1,3 +1,4 @@
+#!/usr/bin/env Rscript
 library(reticulate)
 conda_create("seurat_py_deps")
 print("Install")

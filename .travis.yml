@@ -10,8 +10,8 @@ before_install:
   - chmod "+x" ./travis_setup.sh
   - ./travis_setup.sh
 
-before_script:
-  - chmod "+x" ./build_ci_env.R
-  - Rscript ./build_ci_env.R
+# before_script:
+  # - chmod "+x" ./build_ci_env.R
+  # - Rscript ./build_ci_env.R
 
 warnings_are_errors: false
