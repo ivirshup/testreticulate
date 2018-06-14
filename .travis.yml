@@ -9,5 +9,12 @@ os:
 before_install:
   - chmod "+x" ./travis_setup.sh
   - ./travis_setup.sh
+  - export PATH="$HOME/miniconda/bin:$PATH"
 
 warnings_are_errors: false
+
+after_sucess:
+  - conda list -n rettest
+
+after_failure:
+  - conda list -n rettest
