@@ -1,3 +1,4 @@
+library(reticulate)
 if (Sys.getenv("CI")=="true") {
     reticulate::use_condaenv("seurat_py_deps")
 }
