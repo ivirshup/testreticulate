@@ -7,7 +7,7 @@ if (!("rettest" %in% conda_list()$name)) {
     print("Create")
     conda_create("rettest")
     print("Install")
-    conda_install("rettest", c("python=3.6", "numpy"), forge=F)
+    conda_install("rettest", c("python=3.6", "numpy", "seaborn", "scikit-learn", "statsmodels", "numba", "cython"), forge=F)
     print("Install: scanpy")
     conda_install("rettest", "scanpy", pip=T)
     print("Activate")
