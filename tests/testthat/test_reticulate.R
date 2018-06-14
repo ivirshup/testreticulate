@@ -8,9 +8,9 @@ print("source build script")
 
 source(paste0(Sys.getenv("TRAVIS_BUILD_DIR"), "/build_ci_env.R"))
 
-reticulate::use_condaenv("seurat_py_deps")
+use_condaenv("seurat_py_deps")
+
 print("first test")
-reticulate::py_module_available("numpy")
 expect_true(reticulate::py_module_available("numpy"))
 expect_true(reticulate::py_module_available("scanpy"))
 expect_true(reticulate::py_module_available("phate"))
