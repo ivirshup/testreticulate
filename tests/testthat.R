@@ -1,6 +1,8 @@
-library(reticulate)
+# library(reticulate)
 if (Sys.getenv("CI")=="true") {
-    reticulate::use_condaenv("seurat_py_deps")
+    print("Can use this as a flag.")
+    reticulate::conda_list()
+    # reticulate::use_condaenv("seurat_py_deps")
 }
 
 # library(reticulate)
