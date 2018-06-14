@@ -10,8 +10,8 @@ if (!("rettest" %in% conda_list()$name)) {
     conda_install("rettest", c("python=3.6", "numpy", "seaborn", "scikit-learn", "statsmodels", "numba", "cython"), forge=F)
     print("Install: scanpy")
     conda_install("rettest", c("scanpy", "phate"), pip=T)
-    print("Activate")
-    use_condaenv("rettest")
+    # print("Activate")
+    # use_condaenv("rettest")
     # py_install("scanpy", envname="rettest")
 }
 
