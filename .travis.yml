@@ -11,6 +11,10 @@ before_install:
   - ./travis_setup.sh
   - export PATH="$HOME/miniconda/bin:$PATH"
 
+before_script:
+  - chmod "+x" ./py_install.R
+  - Rscript ./py_install.R
+
 warnings_are_errors: false
 
 after_sucess:
