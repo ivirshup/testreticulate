@@ -1,6 +1,3 @@
-# library(reticulate)
-# use_condaenv("rettest")
-
 library(testthat)
 library(testreticulate)
 
